@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2048</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <div class="game">
+    <div class="head">
+      <div class="a">2048
+        <button class="info" onClick='info()'>i</button> 
+        <button id="repeat" class="info repeat" onClick='reset()'>↻</button>
+      </div>
+      <div class="score">Счёт<br/><span id="value"></span></div>
+    </div>
+    <div class="description" id="description">
+      Как играть:<br/><br/>
+      Используйте клавиши со стрелками, чтобы перемещать плитки.<br/><br/>
+      Две плитки с одинаковым значением в строке можно объединить. Цель состоит в том, чтобы объединить плитки и получить плитку 2048.<br/><br/>
+      Счет представляет собой сумму объединенных плиток.<br><br/>
+    </div>
+    <div class="field">
+
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+      <div class="row">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+    </div>
+
+  </div>
+  <div class='' id='status'>
+  </div>
+</body>
+</html>
